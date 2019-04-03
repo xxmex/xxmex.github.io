@@ -1089,3 +1089,9 @@ img::-moz-selection {
 .page-fullscreen footer .copyright a:hover {
   color: #ddd;
 }
+
+
+@media only screen and (min-width: 768px)
+.intro-header .site-heading {
+    padding: 300px 0;
+}
