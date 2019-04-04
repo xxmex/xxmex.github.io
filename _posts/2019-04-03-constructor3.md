@@ -12,7 +12,7 @@ tags:                               #标签
 ---
 ## 什么是拷贝构造函数
 ~~拷贝听起来真高级~~
-
+ 
 拷贝构造函数形如
 ```cpp
 class_name(const class_name &object_name)
