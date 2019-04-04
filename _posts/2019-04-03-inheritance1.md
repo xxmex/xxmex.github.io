@@ -46,13 +46,14 @@ class 派生类名 : 继承类型 基类名
 
 继承方式 | 基类的public成员|基类的protected成员|基类的private成员
 :-:|:-:|:-:|:-:|
-public继承|public成员|protected成员|private成员
-protected继承|protected成员|protected成员|private成员
-private继承|private成员|private成员|private成员
+**public继承**|public成员|protected成员|private成员
+**protected继承**|protected成员|protected成员|private成员
+**private继承**|private成员|private成员|private成员
 
 for example：
 ```cpp
 class Base {	//基类 
+
 	public :
 		int pub;
 	private:
@@ -62,22 +63,30 @@ class Base {	//基类
 };
 
 class A : public Base{	//public继承 
+
 	public :
 		int a;
 		void init() {
 			a = pub;	//可以，依然为public成员 
+			
 			a = pro;	//可以，依然为protected成员 
+			
 			a = pri;	//错误，基类的私有成员在派生类中是不可见的 
+			
 		}
 }; 
 
 class B : protected Base{	//protected继承 
+
 	public :
 		int b;
 		void init() {
 			b = pub;	//可以，变为protected成员 
+			
 			b = pro;	//可以，依然为protected成员 
-			b = pri;	//错误，基类的私有成员在派生类中是不可见的 
+			
+			b = pri;	//错误，基类的私有成员在派生类中是不可见的
+			
 		}
 }; 
 
@@ -86,26 +95,43 @@ class C : private Base{	//private继承
 		int c;
 		void init() {
 			c = pub;	//可以，变为private成员 
+			
 			c = pro;	//可以，变为private成员 
+			
 			c = pri;	//错误，基类的私有成员在派生类中是不可见的 
+			
 		}
 }; 
-int x;
+
+int main() {
+	int x;
 	A a;
-	x = a.pub;	//可以，public继承的public成员是public的，对对象可见 
-	x = a.pro;	//错误，public继承的protected成员是protected的，对对象不可见 
+	x = a.pub;	//可以，public继承的public成员是public的，对对象可见
+
+	x = a.pro;	//错误，public继承的protected成员是protected的，对对象不可见
+
 	x = a.pri;	//错误，public继承的private成员是private的，对对象不可见
-	
+
+
+
 	B b;
 	x = b.pub;	//错误，protected继承的public成员是protected的，对对象不可见
+
 	x = b.pro;	//错误，protected继承的protected成员是protected的，对对象不可见
+
 	x = b.pri;	//错误，protected继承的private成员是private的，对对象不可见
-	
+
+
+
 	C c;
 	x = c.pub;	//错误，protected继承的public成员是private的，对对象不可见
+
 	x = c.pro;	//错误，protected继承的protected成员是private的，对对象不可见
+
 	x = c.pri;	//错误，protected继承的private成员是private的，对对象不可见
+
 	return 0;
+}
 ```
 - public继承是一个接口继承，保持is-a原则，每个父类可用的成员对子类也可用,因为每个子类对象也都是一个父类对象。
 - protetced/private继承是一个实现继承，基类的部分成员并非完全成为子类接口的一部分，是has-a的关系原则，所以非特殊情况下不会使用这两种继承关系，在绝大多数的场景下使用的都是公有继承。
