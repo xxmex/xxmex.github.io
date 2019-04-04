@@ -36,7 +36,7 @@ class A {
 		A(){ printf("A()\n"); }
 		~A() { printf("~A()\n"); }
 };
- 
+   
 int main() {
 	A a;
 	printf("do sth\n");
