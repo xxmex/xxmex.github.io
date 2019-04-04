@@ -16,7 +16,8 @@ sidebar-avatar: /img/tou.jpg      # use absolute URL, seeing it's used in both `
 
 # SNS settings
 RSS: false
-github_username:   grlyh
+github_username: grlyh
+google_username: grlyk02
 
 
 # Build settings
