@@ -24,6 +24,7 @@ class_name(const class_name &object_name)
 一个简单的类对象拷贝
 ```cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 class A {
 	private :
@@ -48,6 +49,7 @@ int main() {
 具体看一下拷贝构造函数怎么用。
 ```cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 class A {
 	private :
@@ -76,6 +78,7 @@ int main() {
 举个反例
 ```cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 class A {
 	private :
@@ -115,6 +118,7 @@ A b = a;
 2. 当函数的参数是类的对象
 ```cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 class A {
 	private :
@@ -138,6 +142,7 @@ int main() {
 3. 当函数的返回值是类的对象
 ```cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 class A {
 	private :
@@ -169,6 +174,7 @@ int main() {
 看这段代码
 ```cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 class A {
 	private :
@@ -203,8 +209,9 @@ int main() {
 b把a的指针简单复制了一遍，两者都指向了同一块内存，释放内存的时候被释放了两次，导致出错。
 ### 深拷贝
 对于上面的代码，我们手写一个拷贝构造函数，像这样
-```
+```cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 class A {
 	private :
