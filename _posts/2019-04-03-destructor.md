@@ -24,8 +24,8 @@ tags:                               #标签
 - 析构函数不能显性调用
 
 ### 什么时候调用析构函数
-1. 对象生命周期结束被销毁时
 
+**1.生命周期结束被销毁时**
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -47,7 +47,7 @@ A()
 do sth
 ~A()
 ```
-2. 主动delete指向对象的指针时
+**2.主动delete指向对象的指针时**
 
 我们用new创建了一个指向对象的指针，如果不主动delete，像这样
 ```cpp
@@ -93,7 +93,8 @@ A()
 do sth
 ~A()
 ```
-3. 对象A是对象B的成员，B的析构函数被调用时，A的也会被调用
+**3.对象A是对象B的成员，B的析构函数被调用时，A的也会被调用**
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -119,6 +120,7 @@ int main() {
 	return 0;
 }
 ```
+
 输出
 ```cpp
 A()
