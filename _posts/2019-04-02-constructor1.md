@@ -35,6 +35,7 @@ A(){}
 
 ```cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 class A {
 	public :
@@ -62,6 +63,7 @@ int main() {
 
 ```cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 class A {
 	public :
@@ -102,6 +104,7 @@ A tmp(10);      //可以，相当于tmp(10, 0);
 构造函数不但能隐性的调用，也可以显性的调用。
 ```cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 class A {
 	public :
@@ -128,6 +131,7 @@ int main() {
 
 ```cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 class A {
 	public :
