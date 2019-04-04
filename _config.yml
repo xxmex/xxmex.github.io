@@ -33,7 +33,7 @@ anchorjs: true                          # if you want to customize anchor. check
 # from PR#40, to support local preview for Jekyll 3.0
 gems: [jekyll-paginate]
 
-
+ba_track_id: 822cb7de173288a79d5052b0ad058b121
 
 
 # Markdown settings
