@@ -26,8 +26,10 @@ tags:                               #标签
 ### 什么时候调用析构函数
 
 **1.生命周期结束被销毁时**
+
 ```cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 class A {
 	public :
@@ -52,6 +54,7 @@ do sth
 我们用new创建了一个指向对象的指针，如果不主动delete，像这样
 ```cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 class A {
 	public :
@@ -73,6 +76,7 @@ do sth
 调用delete释放空间时会调用析构函数
 ```cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 class A {
 	public :
@@ -97,6 +101,7 @@ do sth
 
 ```cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 class A {
 	public :
