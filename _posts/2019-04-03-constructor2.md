@@ -15,6 +15,7 @@ tags:                               #标签
 如：
 ```cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 class A {
 	private :
@@ -52,6 +53,7 @@ int main() {
 初始化列表可以对全部的成员变量进行初始化，也可以对局部的变量进行初始化。
 ```cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 class A {
 	private :
@@ -81,6 +83,7 @@ int main() {
 **<font color = "red">特别注意，成员变量的初始化顺序与初始化列表中列出的类成员变量顺序无关，与类成员变量的声明顺序有关</font>**
 ```cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 class A {
 	private :
@@ -107,6 +110,7 @@ int main() {
 稍微改一改
 ```cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 class A {
 	private :
@@ -135,6 +139,7 @@ int main() {
 **1. 类的成员变量被const修饰时**
 ```cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 class A {
 	private :
@@ -157,6 +162,7 @@ int main() {
 **2. 初始化类的引用成员变量时**
 ```cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 class A {
 	private :
@@ -183,6 +189,7 @@ int main() {
 **3. 类的成员变量是对象，且这个对象只有含有参数的构造函数，没有默认构造函数。**
 ```cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 class A {
 	private :
@@ -220,6 +227,7 @@ int main() {
 **4. 在派生类中初始化基类成员，调用基类的构造函数**
 ```cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 class A {
 	private :
