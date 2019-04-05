@@ -114,7 +114,8 @@ int main() {
 using namespace std;
 class A {
 	private :
-		int b, a;	//注意这里 
+		int b, a;	//注意这里
+		
 	public :
 		A(int x) : b(x), a(b) {}
 		void print() {
