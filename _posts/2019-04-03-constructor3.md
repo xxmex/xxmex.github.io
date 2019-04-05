@@ -133,12 +133,14 @@ class A {
 };
 
 void fun(A c) { 	//函数的形参是类的对象 
+
 	c.print();
 }
 
 int main() {
 	A a(10, 20);
 	fun(a);			//实参是类的对象，调用函数时将复制一个新对象c
+	
 	return 0;
 }
 ```
@@ -160,10 +162,12 @@ class A {
 A fun() { 	
 	A b(20, 10);
 	return b;		//函数的返回值是类的对象 
+	
 }
 
 int main() {
 	A a = fun();	//fun()返回 A 类的临时对象，并赋值给a 
+	
 	a.print();
 	return 0;
 }
