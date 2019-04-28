@@ -11,7 +11,7 @@ github_repo:  # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "我要AK IOI！"
+sidebar-about-description: "太想摘取星星得人，往往忽视了脚下得鲜花"
 sidebar-avatar: /img/tou.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # SNS settings
