@@ -1,10 +1,10 @@
 # Site settings
-title: xzt's Blog
+title: Xzt's Blog
 SEOTitle: Xzt's Blog
 header-img: img/狮子 鬼刀风铃公主高清图4k壁纸_彼岸图网.jpg
 email: 2864609873@qq.com
 description: "你来到了没有知识的荒原"
-keyword: "XZT"
+keyword: "Xzt"
 url: "http://xxmex.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo:  # you code repository
