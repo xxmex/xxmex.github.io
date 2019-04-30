@@ -3,7 +3,7 @@ title: Xzt's Blog
 SEOTitle: Xzt's Blog
 header-img: img/狮子 鬼刀风铃公主高清图4k壁纸_彼岸图网.jpg
 email: 2864609873@qq.com
-description: "你来到了没有知识的荒原"
+description: "内有恶犬"
 keyword: "Xzt"
 url: "http://xxmex.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
@@ -11,7 +11,7 @@ github_repo:  # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "太想摘取星星得人，往往忽视了脚下得鲜花"
+sidebar-about-description: "太想摘取星星的人，往往忽视了脚下的鲜花"
 sidebar-avatar: /img/TIM图片20190406210831.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # SNS settings
